@@ -1,0 +1,104 @@
+<head>
+   <link rel="stylesheet" href="./Style.css" />
+</head>
+<body>
+<fieldset id="openstock">
+<legend>Opening Stock</legend>
+<table border="0">
+<tr>
+<td class="result1">"Rs.5000/-"</td><td class="result1"><input id="a" type="Number"></td>
+</tr>
+<tr>
+<td class="result1">"Rs.1000/-"</td><td class="result1"><input id="b" type="Number"></td>
+</tr>
+<tr>
+<td class="result1">"Rs.500/-"</td><td class="result1"><input id="c" type="Number"></td>
+</tr>
+<tr>
+<td class="result1">"Rs.100/-"</td><td class="result1"><input id="d" type="Number"></td>
+</tr>
+<tr>
+<td class="result1">"Rs.50/-"</td><td class="result1"><input id="e" type="Number"></td>
+</tr>
+<tr>
+<td class="result1">"Rs.20/-"</td><td class="result1"><input id="f" type="Number"></td>
+</tr>
+<tr>
+<td class="result1">"Rs.10/-"</td><td class="result1"><input id="g" type="Number"></td>
+</tr>
+<tr>
+<td class="result1">"Coin Rs.5/-"</td><td class="result1"><input id="h" type="Number"></td>
+</tr>
+<tr>
+<td class="result1">"Coin Rs.2/-"</td><td class="result1"><input id="i" type="Number"></td>
+</tr>
+<tr>
+<td class="result1">"Coin Rs.1/-"</td><td class="result1"><input id="j" type="Number"></td>
+</tr>
+</table>
+<button onclick="stock()" class="button">Enter Stock</button>
+</fieldset>
+
+<h1 id="aaa">Cashier Helper</h1>
+<h3 id="develop"><sup>Developed By :</sup> Aqib Memon</h3>
+<button class="bb" onclick="recev(5000, 'astock')">5000</button>
+<button class="bb" onclick="recev(1000, 'bstock')">1000</button>
+<button class="bb" onclick="recev(500, 'cstock')">500</button>
+<button class="bb" onclick="recev(100, 'dstock')">100</button>
+<button class="bb" onclick="recev(50, 'estock')">50</button><br>
+<button class="bb" onclick="recev(20, 'fstock')">20</button>
+<button class="bb" onclick="recev(10, 'gstock')">10</button>
+<button class="bb" onclick="recev(5, 'hstock')">Coin"5"</button>
+<button class="bb" onclick="recev(5, 'istock')">Coin"2"</button>
+<button class="bb" onclick="recev(1, 'jstock')">Coin"1"</button>
+<br>
+<label >Receive Amount: <h3 id="recamount">00</h3></label>
+<label >Bill Amount: <input onblur="calamount()" class="payable" id="billamount" type="number"></label><br><br>
+<label >Amount Payable: <input class="payable" id="payamount" type="number"></label><br>
+<br><button class="button" onclick="check()">Check</button>
+<br>
+
+<br>
+
+<table border="8">
+<tr>
+<th>Detail</th><th>Stock</th><th>Pay</th>
+<th>Detail</th><th>Stock</th><th>Pay</th>
+</tr>
+<tr>
+<td class="result">"Rs.5000/-"</td><td id="astock">0</td><td class="result"id="fiveth"></td>
+<td class="result">"Rs.20/-"</td><td id="fstock">0</td> <td class="result"id="twenty"></td>
+</tr>
+<tr>
+<td class="result">"Rs.1000/-"</td><td id="bstock">0</td><td class="result"id="oneth"></td>
+<td class="result">"Rs.10/-"</td><td id="gstock">0</td><td class="result"id="ten"></td>
+</tr>
+<tr>
+<td class="result">"Rs.500/-"</td><td id="cstock">0</td><td class="result"id="fivehd"></td>
+<td class="result">"Coin Rs.5/-"</td><td id="hstock">0</td><td class="result"id="five"></td>
+</tr>
+<tr>
+<td class="result">"Rs.100/-"</td><td id="dstock">0</td><td class="result"id="onehd"></td>
+<td class="result">"Coin Rs.2/-"</td><td id="istock">0</td><td class="result"id="two"></td>
+</tr>
+<tr>
+<td>"Rs.50/-"</td><td id="estock">0</td><td class="result"id="fifty"></td>
+<td>"Coin Rs.1/-"</td><td id="jstock">0</td><td class="result"id="one"></td>
+</tr>
+</table>
+
+
+</body>
+
+
+
+<script src="./App.js" >
+</script>
+    
+    
+    
+    
+    
+    
+    
+    
